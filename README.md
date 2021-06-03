@@ -25,7 +25,7 @@ Advantages:
 0. Ask an audience to connect to the same Wi-Fi network
 0. Press a special button to display QR-code
 
-Then by reading and opening a link from a QR-code audience will see currently
+Then by reading and opening a link from the QR-code audience will see currently
 displayed slide that will be updated as you switch slides or presentations.
 
 *Important notice*:
@@ -49,13 +49,10 @@ and users will be able to load it in appropriate amount of time
 
 ## Installation
 
-Just download and use a binary for your OS:
+Just download and use a binary for your OS from
+[release page](https://github.com/alexeyoganezov/harbored/releases).
 
-- [Windows]()
-- [MacOS]()
-- [Linux]()
-
-The code isn't signed and notarized so Windows and MacOS users may encounter
+Binaries aren't signed and notarized so Windows and MacOS users may encounter
 security warnings from OS and antivirus software.
 
 ## Building from source
