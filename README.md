@@ -45,14 +45,13 @@ optimized using
 [Adobe Compress PDF](https://www.adobe.com/acrobat/online/compress-pdf.html)
 or
 [iLovePDF](https://www.ilovepdf.com/ru/compress_pdf)
-and users will be able to load it in appropriate amount of time
 
 ## Installation
 
 Just download and use a binary for your OS from
 [release page](https://github.com/alexeyoganezov/harbored/releases).
 
-Binaries aren't signed and notarized so Windows and MacOS users may encounter
+Those binaries aren't signed and notarized so Windows and MacOS users may encounter
 security warnings from OS and antivirus software.
 
 ## Building from source
