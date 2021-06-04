@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "axios": "^0.21.1",
-    "oldskull": "^0.1.2",
+    "oldskull": "^1.0.0",
     "pdfjs-dist": "^2.7.570"
   }
 }

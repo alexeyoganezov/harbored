@@ -1,4 +1,4 @@
-import {OsfModelView, OsfReference} from 'oldskull';
+import { OsfModelView, OsfReference } from 'oldskull';
 import { PresentationModel } from './PresentationModel';
 
 const pdfjs = require('pdfjs-dist/es5/build/pdf');
@@ -17,7 +17,7 @@ export class PresentationView extends OsfModelView<PresentationModel> {
   waitMessage = new OsfReference(this, '#wait');
   disconnectMessage = new OsfReference(this, '#disconnect');
   presentationEndMessage = new OsfReference(this, '#ended');
-  canvasRef = new OsfReference(this, '#canvas');
+  canvasRef = new OsfReference<HTMLCanvasElement>(this, '#canvas');
   // Copy of model data to distinguish its changes
   // Should be removed on refactoring
   pageNumber: number;
@@ -98,7 +98,10 @@ export class PresentationView extends OsfModelView<PresentationModel> {
       }
     }
     viewport = this.page.getViewport({ scale });
-    const canvas = <HTMLCanvasElement>this.canvasRef.get();
+    const canvas = this.canvasRef.get();
+    if (!canvas) {
+      throw new Error('Canvas element not found');
+    }
     const canvasContext = canvas.getContext('2d');
     canvas.style.maxHeight = `${h}px`;
     this.setMessagesHeight(h);
