@@ -56,7 +56,7 @@ security warnings from OS and antivirus software.
 
 ## Building from source
 
-Install [Go](https://golang.org/dl/) and [Node.js](https://nodejs.org/en/)
+Install [Go](https://golang.org/doc/install) and [Node.js](https://nodejs.org/en/)
 
 Clone the repository:
 
@@ -94,9 +94,10 @@ And run it when needed:
 ./harbored
 ```
 
-If need a distributable use one of the following commands:
+If you need a distributable use following commands:
 
 ```
+go get fyne.io/fyne/v2
 fyne package -os darwin
 fyne package -os linux
 fyne package -os windows
