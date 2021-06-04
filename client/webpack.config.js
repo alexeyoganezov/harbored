@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlMinimizerPlugin = require('html-minimizer-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
   mode: 'production',
@@ -29,6 +30,7 @@ module.exports = {
         },
       ],
     }),
+    // new BundleAnalyzerPlugin(),
   ],
   resolve: {
     extensions: ['.ts', '.js'],
